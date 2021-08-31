@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+}
+
+.nav {
+    background-color: rgb(240, 108, 14);
+    padding: 10px;
+    margin-bottom: 70px;
+    position: sticky;
+    top: 0;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.data {
+    margin: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.back {
+    margin: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 7px;
+    background-color: chocolate;
+    color: white;
+}
+
+.back:hover {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: chocolate;
+    color: chocolate;
+
+}
+
+.container {
+    display: flex;
+    flex-basis: 50%;
+    margin-top: 50px;
+}
+
+.contact,
+.message {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 40px;
+    border-radius: 40px;
+    width: 50%;
+    padding: 30px;
+
+}
+
+h2 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+ul {
+    padding: 20px 60px;
+}
+
+input[type=text] {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+label {
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+h5 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+textarea {
+    border-radius: 20px;
+    height: 90px;
+}
+
+
+input[type=submit] {
+    margin-top: 20px;
+    width: 100px;
+    border: none;
+    background: none;
+    padding: 10px;
+    background-color: chocolate;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        margin-top: 25px;
+    }
+
+    .contact,
+    .message {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        margin: 10px;
+        border-radius: 40px;
+        width: 90%;
+        padding: 10px;
+
+    }
+
+    textarea {
+        max-width: 320px;
+        border-radius: 20px;
+        height: 90px;
+    }
+}
