@@ -28,7 +28,7 @@ console.log(perkenalan);
 //soal 3
 
 const newFunction = function literal(firstName, lastName){
-    return {firstName,lastName, fullName : () => {console.log(firstName + " " + lastName)}}
+    return {firstName,lastName, fullName : () => {console.log(`${firstName} ${lastName}`);}}
 }
 console.log("---------- Soal 3 --------");
 console.log(newFunction("John", "Doe").firstName)
