@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Tugas9 from './Tugas 9/tugas9.js';
+import Tugas10 from './Tugas 10/tugas10.js'
 import reportWebVitals from './reportWebVitals';
 
 const todo = ["Belajar Git & GU" , "Belajar HTML & CSS", "Belajar Javascript" , "Belajar React Dasar" , "Belajar React Advance"];
 
 ReactDOM.render(
   <React.StrictMode>
-    <App todo={todo} title="THINGS TO DO !" />
+    <Tugas10 />
+    <Tugas9 todo={todo} title="THINGS TO DO !" />
   </React.StrictMode>,
   document.getElementById('root')
 );
