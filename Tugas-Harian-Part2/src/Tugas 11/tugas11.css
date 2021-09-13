@@ -1,0 +1,96 @@
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#buah {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#buah td,
+#buah th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#buah tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#buah tr:hover {
+    background-color: #ddd;
+}
+
+#buah th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #5c75e6;
+    color: white;
+}
+
+.btn{
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.green{
+    background-color: green
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    margin-top: 30px;
+    background-color: blue;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container{
+    padding: 50px;
+    background-color: rgb(166, 166, 233);
+    width: 50%;
+    margin-left: 27%;
+    width: 500px;
+    border-radius: 30px;
+    opacity: 0.6;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
