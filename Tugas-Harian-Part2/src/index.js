@@ -4,7 +4,8 @@ import './index.css';
 // import Tugas9 from './Tugas 9/tugas9.js';
 // import Tugas10 from './Tugas 10/tugas10.js';
 // import Tugas11 from './Tugas 11/tugas11.js';
-import Tugas12 from './Tugas 12/tugas12.js';
+// import Tugas12 from './Tugas 12/tugas12.js';
+import DataMahasiswa from './Tugas 13/mahasiswa.js'; 
 import reportWebVitals from './reportWebVitals';
 
 // const todo = ["Belajar Git & GU" , "Belajar HTML & CSS", "Belajar Javascript" , "Belajar React Dasar" , "Belajar React Advance"];
@@ -14,7 +15,8 @@ ReactDOM.render(
     {/* <Tugas10 />
     <Tugas9 todo={todo} title="THINGS TO DO !" /> */}
     {/* <Tugas11 /> */}
-    <Tugas12 />
+    {/* <Tugas12 /> */}
+    <DataMahasiswa />
   </React.StrictMode>,
   document.getElementById('root')
 );
