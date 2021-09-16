@@ -2,8 +2,16 @@
 .time{
     font-weight: bold;
     display: flex;
-    padding-bottom: 20px;
     flex-direction: column;
-    margin-left: 37%;
     text-align: left;
 }
+
+
+.countdown{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

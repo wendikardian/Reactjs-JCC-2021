@@ -74,7 +74,7 @@ form{
     
 }
 
-.container{
+.container_tugas11{
     padding: 50px;
     background-color: rgb(166, 166, 233);
     width: 50%;
@@ -93,4 +93,10 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.tugas11_label{
+    font-size: 18px;
+    color: black;
+    opacity: 1;
 }

@@ -1,13 +1,13 @@
 /* eslint-disable no-undef */
-import './tugas13.css';
-import { mahasiswaContext } from './tugas13';
+import './tugas14.css';
+import { mahasiswaContext } from './tugas14.js';
 import { useContext } from 'react';
+import { useHistory} from 'react-router-dom';
 import axios from "axios";
 
 
-function FormMahasiswa(props){
-
-    
+function FormMahasiswa2(props){
+    let history = useHistory();
     const {mahasiswa, setMahasiswa, currentId, setCurrentId, nama, setNama, course, setCourse, score, setScore} = useContext(mahasiswaContext);
     
     const onChangeNama = (event) => {
@@ -43,6 +43,8 @@ function FormMahasiswa(props){
                     setNama("");
                     setCourse("");
                     setScore("");
+                    setCurrentId(null);
+                    history.push("/tugas14");
                 })
             }else{
                 let data =
@@ -55,9 +57,9 @@ function FormMahasiswa(props){
                     filterMahasiswa.course = course;
                     filterMahasiswa.score = score;
                     setMahasiswa([...mahasiswa])
-                    setCurrentId(null);
                 }
                 )
+                history.push("/tugas14");
             }
 }
 
@@ -68,15 +70,15 @@ function FormMahasiswa(props){
         <h1>Form Nilai Mahasiswa</h1>
         <div className="container">
         <form onSubmit={handleSubmit} >
-            <label className="label_tugas13">
+            <label className="label_tugas14">
             Nama:
             </label>
             <input type="text" value={nama} onChange={onChangeNama}  required/>
-            <label className="label_tugas13">
+            <label className="label_tugas14">
             Mata Kuliah:
             </label>
             <input type="text" value={course} onChange={onChangeCourse}  required/>
-            <label className="label_tugas13">
+            <label className="label_tugas14">
             Nilai:
             </label>
             <input type="number" min="0" max="100" value={score} onChange={onChangeScore}  required/>
@@ -90,4 +92,4 @@ function FormMahasiswa(props){
 }
 
 
-export default FormMahasiswa;
+export default FormMahasiswa2;

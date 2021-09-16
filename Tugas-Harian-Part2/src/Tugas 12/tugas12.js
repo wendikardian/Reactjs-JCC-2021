@@ -133,15 +133,15 @@ function Tugas12(){
         <h1>Form Nilai Mahasiswa</h1>
         <div className="container">
         <form onSubmit={handleSubmit} >
-            <label>
+            <label className="label_tugas12">
             Nama:
             </label>
             <input type="text" value={nama} onChange={onChangeNama}  required/>
-            <label>
+            <label className="label_tugas12">
             Mata Kuliah:
             </label>
             <input type="text" value={course} onChange={onChangeCourse}  required/>
-            <label>
+            <label className="label_tugas12">
             Nilai:
             </label>
             <input type="number" min="0" max="100" value={score} onChange={onChangeScore}  required/>

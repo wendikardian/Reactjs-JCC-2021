@@ -1,0 +1,39 @@
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+.topnav a:hover {
+}
+
+.navbarTheme{
+    border: black solid;
+    border-radius: 10pt;
+    padding: 15px;
+    width: 100px;
+    margin-left: 85%;
+    margin-button: 20px;
+    margin-top: 10px;
+}
+
+.navbarTheme:hover{
+    cursor: pointer;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color:white;
+    color: black;
+}

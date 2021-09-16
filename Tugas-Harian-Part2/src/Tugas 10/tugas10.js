@@ -25,8 +25,8 @@ function Tugas10(){
             <>
             {counter > 0 &&  
                 <div class="time">
-                    <h1>Now At : {time}</h1>
-                    <h3>Countdown : {counter}</h3>
+                    <h1 class="nowat">Now At : {time}</h1>
+                    <h3 class="countdown">Countdown : {counter}</h3>
                 </div>
             }
             </>

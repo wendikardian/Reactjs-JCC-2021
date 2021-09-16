@@ -114,17 +114,17 @@ function Tugas11(){
         </table>
 
         <h1>Form Daftar harga Buah</h1>
-        <div className="container">
+        <div className="container_tugas11">
         <form onSubmit={handleSubmit}>
-            <label>
+            <label class="tugas11_label">
             Nama:
             </label>
             <input type="text" value={inputNamaBuah} onChange={handleChangeNama} required/>
-            <label>
+            <label class="tugas11_label">
             Harga Total:
-            </label>
+            </label >
             <input type="text" value={inputHargaTotal} onChange={handleChangeHarga} required/>
-            <label>
+            <label class="tugas11_label">
             Berat Total (dalam gram):
             </label>
             <input type="text" value={inputBeratTotal} onChange={handleChangeBeratTotal} required/>

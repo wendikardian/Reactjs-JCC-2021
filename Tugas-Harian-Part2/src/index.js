@@ -1,22 +1,58 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import Tugas9 from './Tugas 9/tugas9.js';
-// import Tugas10 from './Tugas 10/tugas10.js';
-// import Tugas11 from './Tugas 11/tugas11.js';
-// import Tugas12 from './Tugas 12/tugas12.js';
+import Tugas9 from './Tugas 9/tugas9.js';
+import Tugas10 from './Tugas 10/tugas10.js';
+import Tugas11 from './Tugas 11/tugas11.js';
+import Tugas12 from './Tugas 12/tugas12.js';
+import { Route, Switch,  BrowserRouter  } from 'react-router-dom';
 import DataMahasiswa from './Tugas 13/mahasiswa.js'; 
+import DataMahasiswa2 from './Tugas 14/mahasiswaTable.js'; 
+import DataMahasiswa3 from './Tugas 14/mahasiswaForm.js'; 
+import Navbar from './Tugas 14/Navbar.js';
+import NavbarContext from './Tugas 14/NavbarCTX.js';
+import Tugas14 from './Tugas 14/tugas14.js';
+
 import reportWebVitals from './reportWebVitals';
 
-// const todo = ["Belajar Git & GU" , "Belajar HTML & CSS", "Belajar Javascript" , "Belajar React Dasar" , "Belajar React Advance"];
+const todo = ["Belajar Git & GU" , "Belajar HTML & CSS", "Belajar Javascript" , "Belajar React Dasar" , "Belajar React Advance"];
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Tugas10 />
-    <Tugas9 todo={todo} title="THINGS TO DO !" /> */}
-    {/* <Tugas11 /> */}
-    {/* <Tugas12 /> */}
-    <DataMahasiswa />
+    <BrowserRouter>
+    <NavbarContext>
+      <Navbar />
+    </NavbarContext>
+      <Switch>
+        <Route path="/" exact>      
+          <Tugas9 todo={todo} title="THINGS TO DO !" /> 
+        </Route>
+        <Route path="/tugas10">      
+          <Tugas10 />
+        </Route>
+        <Route path="/tugas11">      
+          <Tugas11 /> 
+        </Route>
+        <Route path="/tugas12">      
+          <Tugas12 />
+        </Route>
+        <Route path="/tugas13">      
+          <DataMahasiswa />
+        </Route>
+        <Tugas14>
+        <Route path="/tugas14" exact>      
+          <DataMahasiswa2 />
+        </Route>
+        <Route path="/tugas14/tambah">      
+          <DataMahasiswa3 />
+        </Route>
+        </Tugas14>
+      </Switch>
+
+    </BrowserRouter>
+    
+    {/*  */}
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

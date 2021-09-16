@@ -64,11 +64,11 @@ h1 {
 }
 
 .blue {
-    
+
     background-color: blue;
 }
 
-.black{
+.black {
     margin-top: 30px;
     background-color: rgb(102, 99, 99);
 }
@@ -101,8 +101,23 @@ select {
     box-sizing: border-box;
 }
 
+.tambah_data{
+    color: white;
+    background-color: green;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    width: 150px;
+}
 
-.label_tugas12{
+.tambah_data:hover{
+    cursor: pointer;
+}
+
+.label_tugas14{
     font-size: 18px;
     color: white;
+    text-decoration: false;
+    border: 0px;
 }

@@ -100,3 +100,8 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+.label_tugas13{
+    color: white;
+    font-size: 18px;
+}

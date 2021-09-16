@@ -3,7 +3,7 @@ import logo from './../logo.png';
 
 function App(props) {
     return (
-        <div class="container">
+        <div class="tugas9-container">
         <img src={logo} alt="logo"/>
         <h1>{props.title}</h1>
         <h3>During Bootcamp in JabarCodingCamp</h3>
