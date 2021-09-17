@@ -3,6 +3,8 @@ import  NavbarContext  from './NavbarCTX.js';
 import {Link} from 'react-router-dom';
 import {useContext} from 'react';
 import {NavbarCTX} from './NavbarCTX.js';
+import 'antd/dist/antd.css';
+import { Switch } from 'antd';
 
 function Navbar (){
 
@@ -43,10 +45,15 @@ function Navbar (){
                 <Link to="/tugas12" > <a><span className="nav">Tugas 12</span> </a></Link>
                 <Link to="/tugas13" ><a><span className="nav">Tugas 13</span> </a></Link>
                 <Link to="/tugas14" ><a><span className="nav">Tugas 14</span></a> </Link>
+                <Link to="/tugas15" ><a><span className="nav">Tugas 15</span></a> </Link>
+                <div className = "switch">
+                <Switch defaultChecked onChange={changeTheme} />
+                </div> 
             </div>
-            <div className="navbarTheme" onClick={changeTheme}>
+            
+            {/* <div className="navbarTheme" onClick={changeTheme}>
                 {toChange} Theme
-            </div>
+            </div> */}
         </NavbarContext>
         </>
     );

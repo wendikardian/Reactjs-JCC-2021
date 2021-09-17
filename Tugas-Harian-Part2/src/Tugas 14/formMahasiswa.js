@@ -73,15 +73,15 @@ function FormMahasiswa2(props){
             <label className="label_tugas14">
             Nama:
             </label>
-            <input type="text" value={nama} onChange={onChangeNama}  required/>
+            <input type="text" className="form-control-jcc" value={nama} onChange={onChangeNama}  required/>
             <label className="label_tugas14">
             Mata Kuliah:
             </label>
-            <input type="text" value={course} onChange={onChangeCourse}  required/>
+            <input type="text" className="form-control-jcc" value={course} onChange={onChangeCourse}  required/>
             <label className="label_tugas14">
             Nilai:
             </label>
-            <input type="number" min="0" max="100" value={score} onChange={onChangeScore}  required/>
+            <input type="number" min="0" className="form-control-jcc" max="100" value={score} onChange={onChangeScore}  required/>
             <button className="btn black" type="submit" value="Submit" >submit</button>
         </form>
         </div>

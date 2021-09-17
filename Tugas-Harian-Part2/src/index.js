@@ -12,6 +12,8 @@ import DataMahasiswa3 from './Tugas 14/mahasiswaForm.js';
 import Navbar from './Tugas 14/Navbar.js';
 import NavbarContext from './Tugas 14/NavbarCTX.js';
 import Tugas14 from './Tugas 14/tugas14.js';
+import DataMahasiswaTugas15 from './Tugas 15/mahasiswaTable15.js';
+import DataMahasiswa2Tugas15 from './Tugas 15/mahasiswaForm15.js';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -45,6 +47,12 @@ ReactDOM.render(
         </Route>
         <Route path="/tugas14/tambah">      
           <DataMahasiswa3 />
+        </Route>
+        <Route path="/tugas15" exact>      
+          <DataMahasiswaTugas15 />
+        </Route>
+        <Route path="/tugas15/tambah">      
+          <DataMahasiswa2Tugas15 />
         </Route>
         </Tugas14>
       </Switch>

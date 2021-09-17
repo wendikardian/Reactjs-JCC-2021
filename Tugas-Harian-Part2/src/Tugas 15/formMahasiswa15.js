@@ -1,13 +1,15 @@
 /* eslint-disable no-undef */
-import './tugas13.css';
-import { mahasiswaContext } from './tugas13';
+import './tugas15.css';
+import { mahasiswaContext } from './../Tugas 14/tugas14.js';
 import { useContext } from 'react';
+import { useHistory} from 'react-router-dom';
 import axios from "axios";
+import {message} from 'antd';
+import 'antd/dist/antd.css';
 
 
-function FormMahasiswa(props){
-
-    
+function FormMahasiswa2(props){
+    let history = useHistory();
     const {mahasiswa, setMahasiswa, currentId, setCurrentId, nama, setNama, course, setCourse, score, setScore} = useContext(mahasiswaContext);
     
     const onChangeNama = (event) => {
@@ -43,6 +45,9 @@ function FormMahasiswa(props){
                     setNama("");
                     setCourse("");
                     setScore("");
+                    setCurrentId(null);
+                    history.push("/tugas15");
+                    message.success("Success adding data");
                 })
             }else{
                 let data =
@@ -55,9 +60,10 @@ function FormMahasiswa(props){
                     filterMahasiswa.course = course;
                     filterMahasiswa.score = score;
                     setMahasiswa([...mahasiswa])
-                    setCurrentId(null);
                 }
                 )
+                history.push("/tugas15");
+                message.success("Success edit data");
             }
 }
 
@@ -68,18 +74,18 @@ function FormMahasiswa(props){
         <h1>Form Nilai Mahasiswa</h1>
         <div className="container">
         <form onSubmit={handleSubmit} >
-            <label className="label_tugas13">
+            <label className="label_tugas14">
             Nama:
             </label>
-            <input className="form-control-jcc" type="text" value={nama} onChange={onChangeNama}  required/>
-            <label className="label_tugas13">
+            <input type="text" value={nama} onChange={onChangeNama} className="form-control-jcc" required/>
+            <label className="label_tugas14">
             Mata Kuliah:
             </label>
-            <input type="text" value={course} onChange={onChangeCourse}  required/>
-            <label className="form-control-jcc" className="label_tugas13">
+            <input type="text" value={course} onChange={onChangeCourse} className="form-control-jcc"  required/>
+            <label className="label_tugas14">
             Nilai:
             </label>
-            <input className="form-control-jcc" type="number" min="0" max="100" value={score} onChange={onChangeScore}  required/>
+            <input type="number" min="0" max="100" value={score} onChange={onChangeScore} className="form-control-jcc" required/>
             <button className="btn black" type="submit" value="Submit" >submit</button>
         </form>
         </div>
@@ -90,4 +96,4 @@ function FormMahasiswa(props){
 }
 
 
-export default FormMahasiswa;
+export default FormMahasiswa2;

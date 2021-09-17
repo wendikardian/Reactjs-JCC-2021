@@ -136,15 +136,15 @@ function Tugas12(){
             <label className="label_tugas12">
             Nama:
             </label>
-            <input type="text" value={nama} onChange={onChangeNama}  required/>
+            <input className="form-control-jcc" type="text" value={nama} onChange={onChangeNama}  required/>
             <label className="label_tugas12">
             Mata Kuliah:
             </label>
-            <input type="text" value={course} onChange={onChangeCourse}  required/>
+            <input className="form-control-jcc" type="text" value={course} onChange={onChangeCourse}  required/>
             <label className="label_tugas12">
             Nilai:
             </label>
-            <input type="number" min="0" max="100" value={score} onChange={onChangeScore}  required/>
+            <input className="form-control-jcc" type="number" min="0" max="100" value={score} onChange={onChangeScore}  required/>
             <button className="btn black" type="submit" value="Submit" >submit</button>
         </form>
         </div>
