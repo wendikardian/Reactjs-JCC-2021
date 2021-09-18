@@ -1,0 +1,19 @@
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h5 {
+    color: #eee;
+}
+
+.row {
+    margin: 20px;
+    min-height: 100vh;
+}

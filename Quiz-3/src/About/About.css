@@ -1,0 +1,15 @@
+.about-wendi{
+    display: block;
+    margin: 50px;
+    background-color: white;
+    margin-bottom: 250px;
+    align-items: left !important;
+    padding: 50px;
+    
+}   
+
+ol, li{
+    text-align: left;
+    list-style-type: none;
+    align-items: left !important;
+}
