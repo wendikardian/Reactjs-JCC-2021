@@ -50,7 +50,6 @@ function FormMobile(){
                         is_android_app : uploadedData.is_android_app,
                         is_ios_app : uploadedData.is_ios_app
                     }
-                    console.log()
                     setMobileApp([ ...mobileApp, databaru]);
                     history.push("/mobile-list");
                     message.success("Success adding data");

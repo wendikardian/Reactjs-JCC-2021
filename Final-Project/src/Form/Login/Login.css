@@ -1,0 +1,21 @@
+.form-container{
+    position: fixed;
+    background-color: white;
+    border-radius: 30pt;
+    width: 40%;
+    margin-button: -300pt;
+    margin-top: 100pt;
+    margin-left: 100pt;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 50pt;
+}
+
+.img-login{
+    position: fixed;
+    top: 80pt;
+    right: 50pt;
+}
+
+.logo-login{
+    width: 340pt;
+}

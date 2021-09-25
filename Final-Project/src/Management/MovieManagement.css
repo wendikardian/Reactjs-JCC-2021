@@ -1,0 +1,7 @@
+.editContainer{
+    background-color: white;
+    border-radius : 30pt;
+    margin: 15pt;
+    padding : 20pt;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
