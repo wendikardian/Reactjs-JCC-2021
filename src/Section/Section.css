@@ -1,0 +1,19 @@
+.movie-detail-container {
+    margin : 30pt;
+    margin-top: 10pt;
+    color: white;
+    padding : 30pt;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    min-height: 400pt;
+    border-radius: 20pt;
+    padding-right: 100pt;
+    padding-left: 100pt;
+}
+
+.detail-description{
+    display: flex;
+    flex-direction: column;
+    margin: 20pt;
+    
+}
